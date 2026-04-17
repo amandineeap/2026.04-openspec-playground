@@ -10,6 +10,7 @@ const MACRO_CONFIG = [
   { key: 'protein' as const, label: 'Protein', unit: 'g', color: 'bg-blue-400', overColor: 'bg-red-400' },
   { key: 'carbs' as const, label: 'Carbs', unit: 'g', color: 'bg-emerald-400', overColor: 'bg-red-400' },
   { key: 'fat' as const, label: 'Fat', unit: 'g', color: 'bg-purple-400', overColor: 'bg-red-400' },
+  { key: 'fibre' as const, label: 'Fibre', unit: 'g', color: 'bg-orange-400', overColor: 'bg-red-400' },
 ]
 
 export function DailyProgressBars({ targets, totals }: Props) {

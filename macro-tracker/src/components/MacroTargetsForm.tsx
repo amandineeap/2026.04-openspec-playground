@@ -9,7 +9,7 @@ interface Props {
 export function MacroTargetsForm({ onSave }: Props) {
   const { targets, setTargets } = useMacroTargets()
   const [form, setForm] = useState<MacroTargets>(
-    targets ?? { calories: 2000, protein: 150, carbs: 200, fat: 65 }
+    targets ?? { calories: 2000, protein: 150, carbs: 200, fat: 65, fibre: 30 }
   )
   const [errors, setErrors] = useState<Partial<Record<keyof MacroTargets, string>>>({})
 
@@ -34,6 +34,7 @@ export function MacroTargetsForm({ onSave }: Props) {
     { key: 'protein', label: 'Protein', unit: 'g' },
     { key: 'carbs', label: 'Carbohydrates', unit: 'g' },
     { key: 'fat', label: 'Fat', unit: 'g' },
+    { key: 'fibre', label: 'Fibre', unit: 'g' },
   ]
 
   return (

@@ -3,6 +3,7 @@ export interface MacroTargets {
   protein: number
   carbs: number
   fat: number
+  fibre: number
 }
 
 export interface MacroValues {
@@ -10,6 +11,7 @@ export interface MacroValues {
   protein: number
   carbs: number
   fat: number
+  fibre: number
 }
 
 export interface FoodEntry {

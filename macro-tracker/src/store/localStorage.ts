@@ -7,7 +7,9 @@ const CURRENT_RECIPE_VERSION = '1'
 export function getStoredTargets(): MacroTargets | null {
   try {
     const raw = localStorage.getItem(TARGETS_KEY)
-    return raw ? (JSON.parse(raw) as MacroTargets) : null
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as Partial<MacroTargets>
+    return { fibre: 0, ...parsed } as MacroTargets
   } catch {
     return null
   }
