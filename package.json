@@ -1,0 +1,20 @@
+{
+  "name": "2026.04-openspec-playground",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/amandineeap/2026.04-openspec-playground#readme",
+  "bugs": {
+    "url": "https://github.com/amandineeap/2026.04-openspec-playground/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandineeap/2026.04-openspec-playground.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
